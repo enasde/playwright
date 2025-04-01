@@ -1,7 +1,7 @@
 import { test, expect} from '@playwright/test';
 import TextinputPage from '../pages/TextinputPage.ts';
 
-test('test', async ({ page }) => {
+test('Check if Button Contains Entered Text', async ({ page }) => {
   const textinputpage= new TextinputPage(page);
 
   await page.goto(textinputpage.url);
